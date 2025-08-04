@@ -49,11 +49,9 @@ Este proyecto simula una red corporativa básica utilizando el protocolo de enru
 interface Gig0/1
  ip address 192.168.0.1 255.255.255.252
  no shutdown
-!
 interface Gig0/2
  ip address 192.168.0.6 255.255.255.252
  no shutdown
-!
 router ospf 1
  router-id 1.1.1.1
  network 192.168.0.0 0.0.0.3 area 0
@@ -66,11 +64,9 @@ router ospf 1
 interface Gig0/0
  ip address 192.168.10.1 255.255.255.0
  no shutdown
-!
 interface Gig0/1
  ip address 192.168.0.2 255.255.255.252
  no shutdown
-!
 router ospf 1
  router-id 2.2.2.2
  network 192.168.10.0 0.0.0.255 area 10
@@ -83,11 +79,9 @@ router ospf 1
 interface Gig0/0
  ip address 192.168.20.1 255.255.255.0
  no shutdown
-!
 interface Gig0/2
  ip address 192.168.0.5 255.255.255.252
  no shutdown
-!
 router ospf 1
  router-id 3.3.3.3
  network 192.168.20.0 0.0.0.255 area 20
@@ -99,7 +93,6 @@ router ospf 1
 ## Resultados
 
 Se logró conectividad entre las redes LAN de ambas sucursales a través de OSPF.
-A continuación, la **captura de prueba de ping entre PC-A y PC-B**:
 
 ---
 
