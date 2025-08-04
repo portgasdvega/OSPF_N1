@@ -14,10 +14,7 @@ Este proyecto simula una red corporativa básica utilizando el protocolo de enru
 ---
 
 ## Topología
-
-```
-
-```
+````
         [R1-Core-Área 0]
          /           \
    Área 10(R2)       Área 20(R3)
